@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="over-lay animate" id="over-lay">
+      <h3>searching now...</h3>
+    </div>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#">yummy.eats</a>
+        </nav>
+
+        <div class="text">
+          <h1>the healty</h1>
+          <h2>eating experience</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam esse<br> sint error vitae
+             laborum ratione fuga minus maiores commodi. Natus.
+          </p>
+        </div>
+        <form action="#">
+          <label for="city">Enter your city:</label>
+          <input type="text" name="city" placeholder="San Diego">
+          <button class="btn" id="btn">find food now</button>
+        </form>
+      </div>
+    </header>
+
+    <section>
+      <div class="row">
+        <div class="text">
+          <h1>AUTHENTIC. AWESOME.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Nemo, maiores reprehenderit explicabo ab ad illo eveniet enim velit,
+             exercitationem et recusandae placeat? Maiores laboriosam libero dolore consectetur! Omnis,
+             recusandae expedita!
+          </p>
+        </div>
+        <div class="img">
+          <img src="food.jpg">
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+  
+    let btn = document.getElementById('btn');
+    let overlay = document.getElementById('over-lay');
+
+    btn.addEventListener('click', () => {
+      overlay.style.display = 'block';
+      overlay.classList.add('animate')
+    })
+
+    overlay.addEventListener('click', () => {
+      overlay.style.display = 'none';
+    })
+
+  </script>
+</html>
